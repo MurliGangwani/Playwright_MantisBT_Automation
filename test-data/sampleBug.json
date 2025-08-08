@@ -1,0 +1,97 @@
+[
+  {
+    "Project":"Plugin - FilterPageEdit",
+    "Category": "User Interface",
+    "Reproducibility": "always",
+    "Severity": "crash",
+    "Priority": "urgent",
+    "Select Profile": "Default",
+    "Product Version": "3.4.1",
+    "Summary": "Misaligned Login Form on Small Screens",
+    "Description": "On devices with smaller screen widths (e.g., 360px), the login form fields are misaligned and overflow the container.",
+    "Steps To Reproduce": [
+      "Open the website on a mobile device or emulator with 360x640 resolution",
+      "Navigate to the login page",
+      "Observe the alignment of the username and password input fields"
+    ],
+    "Additional Information": "Impacts usability on mobile devices. No responsive styling for login container.",
+    "View Status": "public",
+    "Report Stay": true
+  },
+  {
+    "Project":"mantisbt",
+    "Category": "User Interface",
+    "Reproducibility": "have not tried",
+    "Severity": "minor",
+    "Priority": "normal",
+    "Select Profile": "Default",
+    "Product Version": "3.4.0",
+    "Summary": "Hover state missing on navigation menu",
+    "Description": "Navigation menu items do not provide any visual feedback when hovered over, reducing usability and discoverability.",
+    "Steps To Reproduce": [
+      "Log in to the application",
+      "Hover over the top navigation menu (My View, View Issues, etc.)",
+      "No visual hover effect is observed"
+    ],
+    "Additional Information": "Expected some color change or underline for better user experience.",
+    "View Status": "private",
+    "Report Stay": true
+  },
+  {
+    "Project":"Mylyn Connector",
+    "Category": "User Interface",
+    "Reproducibility": "sometimes",
+    "Severity": "minor",
+    "Priority": "normal",
+    "Select Profile": "Default",
+    "Product Version": "3.4.0",
+    "Summary": "No spacing between buttons on 'Report Issue' page",
+    "Description": "Buttons like 'Submit Issue' and 'Reset Form' are placed too close to each other on the 'Report Issue' page.",
+    "Steps To Reproduce": [
+      "Go to 'Report Issue'",
+      "Scroll down to the bottom of the form",
+      "Observe the placement of Submit and Reset buttons"
+    ],
+    "Additional Information": "Spacing or margin should be added for better UX and to prevent accidental clicks.",
+    "View Status": "public",
+    "Report Stay": false
+  },
+  { 
+    "Project":"Mylyn Connector",
+    "Category": "User Interface",
+    "Reproducibility": "random",
+    "Severity": "minor",
+    "Priority": "normal",
+    "Select Profile": "Default",
+    "Product Version": "3.12.0",
+    "Summary": "Search box overlaps with table headers in View Issues",
+    "Description": "In 'View Issues', the search box overlaps or pushes the table header depending on screen size.",
+    "Steps To Reproduce": [
+      "Navigate to 'View Issues' page",
+      "Resize the browser window to a narrow width",
+      "Observe the overlap of the search/filter bar with table headers"
+    ],
+    "Additional Information": "This affects responsiveness and layout integrity.",
+    "View Status": "private",
+    "Report Stay": false
+  },
+  { 
+    "Project":"mantisbt",
+    "Category": "User Interface",
+    "Reproducibility": "have not tried",
+    "Severity": "block",
+    "Priority": "immediate",
+    "Select Profile": "Default",
+    "Product Version": "3.4.0",
+    "Summary": "Text wrapping breaks summary lines in Dashboard",
+    "Description": "In the 'Unassigned' section of the dashboard, long summaries break into awkward lines due to insufficient width or lack of truncation.",
+    "Steps To Reproduce": [
+      "Login and go to the Dashboard",
+      "Scroll down to the 'Unassigned' bugs section",
+      "Observe how long summaries wrap to the next line mid-word"
+    ],
+    "Additional Information": "Consider text truncation with ellipsis or dynamic column resizing.",
+    "View Status": "public",
+    "Report Stay": true
+  }
+]
